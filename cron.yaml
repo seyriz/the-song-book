@@ -1,0 +1,7 @@
+cron:
+- description: crawl data from KY
+  url: /task/crawl/KY
+  schedule: every saturday 00:01
+- description: crawl data from TJ
+  url: /task/crawl/TJ
+  schedule: every saturday 00:01
