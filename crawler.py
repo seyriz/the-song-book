@@ -63,12 +63,11 @@ class KYCrawler(object):
     has_next = True
 
     def __init__(self):
-        # for i in range(1, 42):
-        #     while self.has_next:
-        i = 1
-        url = self.search_url.format(i, self.page)
-        print(url)
-        self.get_page(url)
+        for i in range(1, 42):
+            while self.has_next:
+                url = self.search_url.format(i, self.page)
+                print(url)
+                self.get_page(url)
 
     def get_page(self, url):
         print("PAGE {}".format(self.page))
